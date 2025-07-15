@@ -1,0 +1,72 @@
+/* Sunset Theme */
+
+body.sunset {
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: sunsetGradient 15s ease infinite;
+    color: #fff;
+    transition: background 0.4s ease-in-out;
+}
+
+@keyframes sunsetGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.sunset-input {
+    background: #ffffffbb;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+}
+
+.sunset-input::placeholder {
+    color: #555;
+    opacity: 0.8;
+}
+
+.sunset-input:hover {
+    background: #fff;
+}
+
+.sunset-button {
+    background: #f67280;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 20px 20px 0;
+    transition: background 0.3s ease;
+}
+
+.sunset-button:hover {
+    background: #c94d63;
+}
+
+.sunset-todo {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.check-btn, .delete-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.check-btn i, .delete-btn i {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.sunset-theme {
+    background: #ff9a9e; /* Static sunset color */
+    background-image: none;
+}
