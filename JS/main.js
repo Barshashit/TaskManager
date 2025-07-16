@@ -31,7 +31,7 @@ darkerTheme.addEventListener('click', () => changeTheme('darker'));
 sunsetTheme.addEventListener('click', () => changeTheme('sunset'));
 
 
-// Check if one theme has been set previously and apply it (or std theme if not found):
+// The main theme of the task manager will me "Sunset" if want to change the theme change changeTheme('sunset')-->changeTheme('standard')
 let savedTheme = localStorage.getItem('savedTheme');
 savedTheme === null ?
     changeTheme('sunset')
