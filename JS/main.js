@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     reminderBell.addEventListener("click", () => {
         reminderBox.style.display = reminderBox.style.display === "block" ? "none" : "block";
     });
+    let savedTheme = localStorage.getItem('savedTheme') || 'sunset';
+    changeTheme(savedTheme);
 });
 
 
